@@ -1,51 +1,36 @@
-.App {
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+
+  background: #F0EAD6;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 1s linear alternate;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #aaf;
-  min-height: 100vh;
+.column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #00f;
-  transition: 1s;
+.status {
+  padding-bottom: 20px;
 }
 
-.App-link:hover {
-  transform: rotate(360deg) scale(3);
-  color: #ff00ff;
+.board {
+  display: inline-flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: skewX(15deg) scale(1.1, 0.9);
-  }
+.container {
+  margin: 20px;
+}
 
-  25% {
-    transform: skewX(5deg) scale(1, 1);
-  }
-
-  50% {
-    transform: skewX(0) scale(0.75, 1.3);
-  }
-
-  75% {
-    transform: skewX(-5deg) scale(1, 1);
-  }
-
-  to {
-    transform: skewX(-15deg) scale(1.1, 0.9);
-  }
+.game {
+  display: block;
+  text-align: center;
 }
